@@ -35,7 +35,7 @@ public class HDCache<K, V> implements ICache<K, V> {
     @Override
     public void cacheObject(K key, V value) throws IOException {
         String pathToObject;
-        pathToObject = "D:\\temp\\" + UUID.randomUUID().toString() + ".temp";
+        pathToObject = "\\temp\\" + UUID.randomUUID().toString() + ".temp";
         pathMap.put(key, pathToObject);
 
         FileOutputStream fileStream = new FileOutputStream(pathToObject);
